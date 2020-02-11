@@ -11,4 +11,4 @@ export const CurrentUserProvider = ({children}) => {
     currentUser: null
   });
   return <CurrentUserContext.Provider value={[state, setState]}>{children}</CurrentUserContext.Provider>
-}
+};

@@ -19,7 +19,7 @@ const Authentication = (props) => {
   const [, setCurrentUserState] = useContext(CurrentUserContext);
 
   const [{response, isLoading, error}, doFetch] = useFetch(apiUrl);
-  const [, setToken] = userLocalStorage('token')
+  const [, setToken] = userLocalStorage('token');
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -31,8 +31,6 @@ const Authentication = (props) => {
       }
     })
   };
-
-  console.log(error);
 
 
   useEffect(() => {
