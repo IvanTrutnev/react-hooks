@@ -12,8 +12,6 @@ const PopularTags = () => {
     doFetch();
   }, [doFetch]);
 
-  console.log(response);
-
   if (isLoading || !response) {
     return <Loading/>
   }

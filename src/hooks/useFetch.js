@@ -27,7 +27,6 @@ export default (url) => {
     axios(baseUrl + url, requestOptions).then(res => {
       setResponse(res.data);
       setIsLoading(false);
-      console.log(res.data)
     }).catch(err => {
       console.log(err);
       setError(err.response.data);
